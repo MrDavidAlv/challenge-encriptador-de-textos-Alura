@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --color-fondo:#F3F5F6;
-    --color-primario:#0A3871;
-    --color-secundario:#FFFFFF;
-    --color-terciario:#495057;
-    --color-cuaternario:#D8DFE8;
+    --color-fondo: #E5E5E5;
+    --color-primario: #0A3871;
+    --color-secundario: #FFFFFF;
+    --color-terciario: #495057;
+    --color-cuaternario: #D8DFE8;
 
     --fuente-inter: "Inter", "regular";
 }
 
-html, body {
+html,
+body {
     margin: 0px;
     padding: 0px;
 }
 
 body {
     background-color: var(--color-fondo);
-    border: 1px solid var(--color-primario);
     width: 100%;
     overflow: hidden;
 }
@@ -26,35 +26,44 @@ main {
     margin: 2%;
     display: flex;
     height: 95vh;
+    width: 100%;
+    align-items: center;
 }
 
 
 /*Aqui empieza seccion 1*/
 .left-container {
-    background-color: mediumaquamarine;   
-    width: 65%;
-    height: 90vh;
-    float: left;
+    width: 68%;
+    height: 90%;
 }
 
 
 .logo {
     width: 120px;
-    height: 48px;
+    height: 100px;
+    align-content: center;
+}
+
+img,
+.logo {
+    height: auto;
+}
+
+.left {
+    padding-left: 5%;
 }
 
 .encrypt-container {
-    border: 1px solid var(--color-primario);
-    background-color: #2578e4;
     margin: 0px;
-    padding-left: 10%;
+    height: 88%;
 }
 
 .textBox {
-width: 100%;
-background-color: #232930;
+    width: 100%;
+    height: 85%;
 
 }
+
 .entradaTexto {
     background-color: var(--color-fondo);
     color: var(--color-primario);
@@ -62,6 +71,7 @@ background-color: #232930;
     font-size: 32px;
     border: none;
     width: 95%;
+    height: 100%;
 }
 
 .disclaimer {
@@ -71,6 +81,8 @@ background-color: #232930;
     font-family: var(--fuente-inter);
     font-size: 12px;
     color: var(--color-terciario);
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .contenedorBotones {
@@ -78,16 +90,18 @@ background-color: #232930;
     gap: 24px;
     font-family: var(--fuente-inter);
     font-size: 16px;
-    background-color: red;
     width: 100%;
+
     justify-content: center;
+
 }
 
 .botones {
-    width: 280px;
-    max-height: 67px;
+    width: 260px;
+    height: 55px;
     border-radius: 15px;
-    padding: 1%;
+
+
 }
 
 .botonEncriptar {
@@ -110,18 +124,42 @@ background-color: #232930;
 
 /*Aqui empieza seccion 2*/
 .right-container {
-    background-color: yellow;
-    width: 31%;
-    float: right;
-    height: 90vh;
-}
-
-.salidaTexto {
-}
-
-.cardText {
+    background-color: var(--color-secundario);
+    height: 90%;
     border: 1px solid var(--color-primario);
+    border-radius: 20px;
+    width: 23%;
+    margin-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 100px;
 }
+
+.right {
+    align-items: center;
+    text-align: center;
+}
+
+.imageContainer {
+    width: 100%;
+}
+
+.muneco {
+    width: 230px;
+}
+
+#textOutput {
+    width: -webkit-fill-available;
+    height: 90%;
+    border: none;
+}
+
+#respuesta,
+#respuestaBoton {
+    display: none;
+}
+
+
 
 .alertaMensaje {
     font-family: var(--fuente-inter);
@@ -136,31 +174,67 @@ background-color: #232930;
     color: var(--color-terciario);
 }
 
-.botonCopiar {
-    background: var(--color-secundario);
-    border-radius: 24px;
-    color: var(--color-primario);
-    border: 1px solid var(--color-primario);
+.contenedorBoton {
+    width: 100%;
+    justify-items: center;
+    margin-top: 35px;
 }
+
+
+
+
+
 
 
 @media (max-width: 768px) {
-    main{
-        display: block;
+    main {
+        display: grid;
+        width: 96%;
+        align-items: normal;
     }
 
     .left-container {
-        background-color: mediumaquamarine;   
         width: 100%;
-        max-height: 40vh;
-        float: none;
+        padding: 5px;
+        text-align: center;
+        background-color: #495057;
     }
+
+
 
     .right-container {
-        background-color: yellow;
-        width: 100%;
-        height: auto;
-        float: none;
+        width: auto;
+        margin-left: 0%;
+        margin-bottom: 0px;
+        justify-content: center;
+        background-color: aqua;
     }
-}
 
+    .imageContainer {
+        display: none;
+    }
+
+    #respuesta {
+        border: none;
+        width: 95%;
+        height: 60%;
+    }
+
+    .encrypt-container {
+        width: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .contenedorBotones {
+        height: auto;
+        background-color: blueviolet;
+    }
+
+    #textOutput {
+        width: -webkit-fill-available;
+        background-color: #E5E5E5;
+
+    }
+
+}
