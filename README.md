@@ -1,6 +1,13 @@
 # ¡Bienvenidas y bienvenidos a nuestro primer desafío!
 
+
+
 Durante estas cuatro semanas, vamos a trabajar en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
+
+### Puedes ver este proyecto [aquí](https://mrdavidalv.github.io/challenge-encriptador-de-textos-Alura/)
+<div id="header" align="center">
+	<img src="./img/responsive.PNG" width="100"/>
+</div>
 
 ## Llaves de Encriptación
 
@@ -44,5 +51,3 @@ Tenemos un periodo de tiempo de cuatro semanas para desarrollar el proyecto y va
 - Por fin, en la columna **Concluido** estarán los elementos ya concluidos.
 
 El Trello es una herramienta de uso individual para que puedas controlar el progreso de tus actividades, pero no será evaluada.
-
-¡Buen proyecto!
